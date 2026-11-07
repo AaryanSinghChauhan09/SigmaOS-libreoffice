@@ -1,39 +1,7 @@
-//! SigmaOS-libreoffice - SigmaOS Component
-//!
-//! Desktop and productivity component for SigmaOS.
+//! SigmaOS-libreoffice — utility model.
 
-use anyhow::Result;
-use log::info;
-use serde::{Deserialize, Serialize};
+pub mod util;
+pub mod options;
 
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct Config {
-    pub enabled: bool,
-    pub desktop_integration: bool,
-}
-
-impl Default for Config {
-    fn default() -> Self {
-        Self { enabled: true, desktop_integration: true }
-    }
-}
-
-pub struct libreoffice {
-    config: Config,
-}
-
-impl libreoffice {
-    pub fn new(config: Config) -> Self {
-        Self { config }
-    }
-
-    pub fn initialize(&mut self) -> Result<()> {
-        info!("Initializing SigmaOS-libreoffice");
-        Ok(())
-    }
-
-    pub fn launch(&mut self) -> Result<()> {
-        info!("Launching SigmaOS-libreoffice");
-        Ok(())
-    }
-}
+pub use util::Model;
+pub use options::{Mode, Options};
