@@ -18,3 +18,9 @@ cargo test
 ## License
 
 GPL-3.0-or-later
+
+## See Also
+
+Related SigmaOS **office** repositories:
+
+- [SigmaOS-onlyoffice](../SigmaOS-onlyoffice/README.md) — OnlyOffice Document Server integration and editor session builder in Rust
