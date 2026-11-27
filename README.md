@@ -1,13 +1,20 @@
 # SigmaOS-libreoffice
 
-SigmaOS LibreOffice integration.
+LibreOffice integration and file format conversion CLI in Rust for SigmaOS.
 
-## See Also
+## Features
 
-Related SigmaOS **Office** repositories:
+- Document family and format detection (`odt`, `docx`, `ods`, `xlsx`, `csv`, `odp`, `pptx`, `pdf`, `html`)
+- Compatibility validation between source and target formats
+- Headless `soffice` conversion argument builder
 
-- [SigmaOS-betteroffice](../SigmaOS-betteroffice/README.md) — SigmaOS BetterOffice suite
-- [SigmaOS-genoffice](../SigmaOS-genoffice/README.md) — SigmaOS GenOffice document suite
-- [SigmaOS-iloveapi](../SigmaOS-iloveapi/README.md) — SigmaOS iLoveAPI / PDF & media utilities
-- [SigmaOS-onlyoffice](../SigmaOS-onlyoffice/README.md) — SigmaOS OnlyOffice integration
-- [SigmaOS-craft](../SigmaOS-craft/README.md) — SigmaOS Craft creative & productivity suite
+## Usage
+
+```bash
+cargo run -- convert-args report.odt pdf /tmp/out
+cargo test
+```
+
+## License
+
+GPL-3.0-or-later

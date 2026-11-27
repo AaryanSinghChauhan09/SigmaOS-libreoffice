@@ -1,0 +1,17 @@
+[package]
+name = "sigmaos-libreoffice"
+version = "0.1.0"
+edition = "2021"
+authors = ["SigmaOS Project"]
+description = "LibreOffice integration and file format conversion CLI in Rust"
+license = "GPL-3.0-or-later"
+readme = "README.md"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+
+[lib]
+name = "sigmaos_libreoffice"
+path = "src/lib.rs"

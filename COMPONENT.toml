@@ -1,0 +1,6 @@
+[component]
+name = "SigmaOS-libreoffice"
+description = "LibreOffice integration and file format conversion CLI in Rust"
+category = "office"
+license = "GPL-3.0-or-later"
+language = "rust"
